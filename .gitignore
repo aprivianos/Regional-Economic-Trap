@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 *.pyo
 .ipynb_checkpoints/
-data/raw/ddac.xlsx
+# data/raw/ddac.xlsx — di-upload ke GitHub
 data/processed/
 models/*.pkl
 .env
