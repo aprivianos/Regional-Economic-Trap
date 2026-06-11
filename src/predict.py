@@ -9,6 +9,11 @@ from src.utils import MODELS_DIR, DATA_PROCESSED
 from src.feature_engineering import prepare_features
 
 
+KOEF_APBN = 0.119361
+KOEF_KUR = 0.319629
+KOEF_TKD = 0.172685
+
+
 def load_model(model_name: str = "xgboost"):
     model = joblib.load(MODELS_DIR / f"model_{model_name}.pkl")
     encoders = joblib.load(MODELS_DIR / "encoders.pkl")
